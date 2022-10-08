@@ -28,6 +28,11 @@ export const connectModal = ({ name, getModalState = state => state.modal }) => 
   if (!isShow) return null
 
   return (
-    <Component show={show} {...props} {...modalProps} handleHide={handleHide} />
+    <Component
+      {...props}
+      {...modalProps}
+      handleHide={handleHide}
+      show={show}
+    />
   )
 }

@@ -1,7 +1,7 @@
-const SHOW_MODAL = 'modal/showModal'
-const HIDE_MODAL = 'modal/hideModal'
+const SHOW_MODAL = '@redux-modal-manager/SHOW'
+const HIDE_MODAL = '@redux-modal-manager/HIDE'
 
-export function show (name, props) {
+export function show (name, props = {}) {
   return dispatch => {
     dispatch({
       type: SHOW_MODAL,
