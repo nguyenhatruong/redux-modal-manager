@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { useDispatch } from 'react-redux'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { hide as hideModal } from './reducer'
 
 export const connectModal = ({ name, getModalState = state => state.modal }) => Component => props => {

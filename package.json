@@ -1,9 +1,10 @@
 {
   "name": "redux-modal-manager",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A custom libary base on redux-modal with fix bug when close modal",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:lib": "rollup -c",
@@ -22,6 +23,9 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-node-resolve": "^14.1.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@types/react-redux": "^7.1.24",
     "babel-loader": "^8.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
