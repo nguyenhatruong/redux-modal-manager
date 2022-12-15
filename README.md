@@ -71,9 +71,14 @@ The show modal action creator.
 ### Example
 
 ```javascript
-import { MyModalProps } from '...'
+import { show, hide, hideAll } from 'redux-modal-manager'
+import { useDispatch } from 'react-redux'
 
-show<MyModalProps>('modalName', {prop1: 'example'})
+const dispatch = useDispatch()
+
+dispatch(show('modalName', {prop1: 'example'}))
+dispatch(show('modalName'))
+dispatch(hideAll())
 ```
 
 ## hide(name)
