@@ -77,7 +77,7 @@ import { useDispatch } from 'react-redux'
 const dispatch = useDispatch()
 
 dispatch(show('modalName', {prop1: 'example'}))
-dispatch(show('modalName'))
+dispatch(hide('modalName'))
 dispatch(hideAll())
 ```
 
