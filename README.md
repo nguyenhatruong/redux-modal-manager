@@ -71,14 +71,12 @@ The show modal action creator.
 ### Example
 
 ```javascript
-import { show, hide, hideAll } from 'redux-modal-manager'
+import { show } from 'redux-modal-manager'
 import { useDispatch } from 'react-redux'
 
 const dispatch = useDispatch()
 
-dispatch(show('modalName', {prop1: 'example'}))
-dispatch(hide('modalName'))
-dispatch(hideAll())
+dispatch(show('modalName', { prop1: 'example' }))
 ```
 
 ## hide(name)
@@ -88,6 +86,33 @@ The hide modal action creator.
 ### Arguments
 
 * `name`(String) The name of modal to hide.
+
+### Example
+
+```javascript
+import { hide } from 'redux-modal-manager'
+import { useDispatch } from 'react-redux'
+
+const dispatch = useDispatch()
+
+dispatch(hide('modalName'))
+```
+
+## hideAll()
+
+The hide all modal action creator.
+
+
+### Example
+
+```javascript
+import { hideAll } from 'redux-modal-manager'
+import { useDispatch } from 'react-redux'
+
+const dispatch = useDispatch()
+
+dispatch(hideAll())
+```
 
 ## License
 
