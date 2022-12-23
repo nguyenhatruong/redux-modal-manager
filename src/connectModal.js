@@ -17,7 +17,7 @@ export const connectModal = ({ name, getModalState = state => state.modal }) => 
     }
     delay.current = setTimeout(() => {
       setIsShow(false)
-    }, 1000)
+    }, 500)
   }, [show])
 
   const handleHide = () => {
